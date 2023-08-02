@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/authorize', (req, res) => {
-  res.redirect('https://zoom.us/oauth/authorize?client_id=qwPquXvgSkG7nXc9kb_Wg&response_type=code&redirect_uri=https%3A%2F%2Fgptzoom.vercel.app%2Fauthorize')
+  res.redirect('https://zoom.us/launch/chat?jid=robot_' + process.env.zoom_bot_jid)
 })
 
 app.get('/support', (req, res) => {
